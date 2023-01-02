@@ -1,0 +1,159 @@
+* { 
+	margin: 0; padding: 0;
+  }
+
+body{}
+
+
+div{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 10vh 20vh 65vh 5vh;
+	grid-template-areas: "nt nt nt nt" 
+						 "h h h h"
+						 "n m m a"
+						 "f f f f"
+}
+
+#nav-topo{
+	background-color: #212121;
+	grid-area: nt;
+}
+
+ul{
+	display: flex;
+	/*gap: 30px;*/
+	justify-content: flex-end;
+	height: 100%;
+	align-items: center;
+}
+li{
+	color: #fff;
+	margin-right: 30px;
+	list-style-type: none;
+}
+
+header{
+	background-color: #8B8787;
+	/*grid-column: 1/4;*/
+	grid-area: h;
+
+}
+	
+nav{
+	background-color: #fff;
+	/*grid-column: 1/2;*/
+	grid-area: n;
+}
+
+.p-menu:link, .a-menu:visited{
+	color:#FFF;
+}
+
+.p-menu:hover, .a-menu:active{
+	color: #3F51B5;
+}
+
+#nav-menu{
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	grid-area: n;
+	margin-left: 15px;
+	margin-top: 15px;
+	
+}
+
+main{
+	background-color: #212121;
+	/*grid-column: 2/3;*/
+	grid-area: m;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 185px;
+}
+
+#section-1{
+	background-image: url("img/relogio-11.jpg");
+	margin-right: 15px;
+
+}
+#section-1:hover{
+	border: 1px solid #777;
+}
+#section-2{
+	background-image: url("img/relogio-5.jpg");
+	margin-right: 15px;
+}
+#section-2:hover{
+	border: 1px solid #777;
+}
+#section-3{
+	background-image: url("img/relogio-12.jpg");
+	margin-right: 15px;
+}
+#section-3:hover{
+	border: 1px solid #777;
+}
+#section-4{
+	background-image: url("img/relogio-20.jpg");
+	margin-right: 15px;
+}
+#section-4:hover{
+	border: 1px solid #777;
+}
+#section-5{
+	background-image: url("img/relogio-14.jpg");
+	margin-right: 15px;
+}
+#section-5:hover{
+	border: 1px solid #777;
+}
+#section-6{
+	background-image: url("img/relogio-15.jpg");
+	margin-right: 15px;
+}
+#section-6:hover{
+	border: 1px solid #777;
+}
+#section-7{
+	background-image: url("img/relogio-21.jpg");
+	margin-right: 15px;
+}
+#section-7:hover{
+	border: 1px solid #777;
+}
+#section-8{
+	background-image: url("img/relogio-5.jpg");
+	margin-right: 15px;
+}
+#section-8:hover{
+	border: 1px solid #777;
+}
+
+
+section{
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	margin: 20px;
+}
+
+
+
+aside{
+	background-color: #C4C4C4;
+	/*grid-column: 3/4;*/
+	grid-area: a;
+
+}
+
+footer{
+	background-color: #212121;
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+	/*grid-column: 1/4;*/
+	grid-area: f;
+	
+}
